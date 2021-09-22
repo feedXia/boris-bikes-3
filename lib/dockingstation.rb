@@ -3,7 +3,7 @@ class DockingStation
         Bike.new
     end
 
-    def allow_docking
+    def allow_docking?
         true
     end
 end

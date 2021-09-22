@@ -9,7 +9,7 @@ describe DockingStation do
    
    describe '#allow_docking' do
       it 'makes docking a bike possible' do 
-         expect(DockingStation.new.allow_docking).to eq true
+         expect(subject).to be_allow_docking
       end
    end
 end
