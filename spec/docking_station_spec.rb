@@ -7,9 +7,9 @@ describe DockingStation do
       end
    end
    
-   describe '#allow_docking' do
+   describe 'docked bike' do
       it 'makes docking a bike possible' do 
-         expect(subject).to be_allow_docking
+         expect(subject).to be_docked
       end
    end
 end

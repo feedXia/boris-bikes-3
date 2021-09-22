@@ -1,9 +1,15 @@
 class DockingStation
-    def release_bike
-        Bike.new
+    attr_reader :bike
+
+    def initialize
+        @bike = Bike.new
     end
 
-    def allow_docking?
+    def release_bike
+        @bike
+    end
+
+    def docked?
         true
     end
 end
