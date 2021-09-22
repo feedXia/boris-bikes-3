@@ -8,8 +8,15 @@ describe DockingStation do
    end
    
    describe 'docked bike' do
-      it 'makes docking a bike possible' do 
-         expect(subject).to be_docked
+      it 'return the docked bike' do 
+         bike = Bike.new
+         expect(subject.docked?(bike)).to eq(bike)
       end
    end
+
+   # describe 'view docked bikes' do
+   #    it 'sees whether docking station has docked bike' do
+   #       expect().to
+   #    end
+   # end
 end
