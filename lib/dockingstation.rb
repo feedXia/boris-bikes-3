@@ -7,7 +7,14 @@ class DockingStation
     end
 
     def docked(bike)
+        fail 'dock is full' if @bike
         @bike = bike
+    end
+end
+
+class Bike
+    def working?
+        true
     end
 end
 
