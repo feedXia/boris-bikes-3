@@ -14,12 +14,12 @@ RSpec.describe DockingStation do
 
       it 'returns error when the capacity is full' do 
          subject.docked(Bike.new)
-         expect { subject.docked(Bike.new)}.to raise_error 'dock is full'
+         expect {21.times{subject.docked(Bike.new)}}.to raise_error 'dock is full'
       end
 
       it 'can return the docked bike' do 
          bike = Bike.new
-         expect(DockingStation.new.docked(bike)).to eq bike
+         expect(DockingStation.new.docked(bike)).to include bike
       end
    end
 end
